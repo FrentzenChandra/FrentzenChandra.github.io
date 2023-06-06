@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 5 (tailwindcss)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="asset/hamburgers.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    
+  </style>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'Jost': ['Jost', "arial"],
+            'Lato': ['Lato', "arial"],
+          },
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-[Lato]">
+
+  <navbar id="navbar">
+    <div class="bg-white  z-50 shadow-md w-full p-4 flex sticky top-0 opacity-90">
+      <h4 class="text-2xl font-semibold text-teal-500 lg:text-3xl ">Frentzen Chandra</h4>
+      <button class="hamburger hamburger--elastic ml-auto pt-0.5 sm:hidden" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner "></span>
+        </span>
+      </button>
+      <div class="ml-auto hidden sm:block mr-4 font-semibold">
+        <ul class="flex gap-4 sm:text-sm lg:text-lg md:gap-8 pt-2 lg:gap-12">
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700"><a
+              href="#hero">Beranda</a></li>
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700 "><a
+              href="#about">About</a></li>
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700"><a
+              href="#portfolio">Portfolio</a></li>
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700"><a
+              href="#clients">Clients</a></li>
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700"><a
+              href="#blog">Blog</a></li>
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700"><a
+              href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="p-4 mt-0.5 bg-white shadow-md w-48 absolute top-16 right-4 urutan-link invisible  ">
+        <ul class="flex flex-col gap-4 text-xl">
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700 w-full"><a
+              href="#hero">Beranda</a></li>
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700 w-full"><a
+              href="#about">About</a></li>
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700 w-full"><a
+              href="#portfolio">Portfolio</a></li>
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700 w-full"><a
+              href="#clients">Clients</a></li>
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700 w-full"><a
+              href="#blog">Blog</a></li>
+          <li class="hover:text-teal-400 hover:transition-all duration-100  focus:text-teal-700 w-full"><a
+              href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </navbar>
+
+  <hero id="hero">
+    <div class="container mx-auto sm:grid sm:grid-cols-2 bg-white">
+      <div class="text-lg pt-20 px-4 ">
+        <p class=" text-teal-500 font-semibold text-base  lg:text-2xl ">Halo Semuanya 😘, Saya</p>
+        <h1 class="font-semibold text-4xl lg:text-5xl mt-2">Frentzen Chandra </h1>
+        <h3 class="mt-2 text-gray-700">Collaguer & <span class="font-semibold"> Website Maker</span></h3>
+        <p class="mt-3 text-gray-500">Belajar programming itu mudah dan menyenangkan bukan. <span
+            class="font-semibold text-black"> bukan!</span></p>
+        <button
+          class="bg-teal-500  p-2 px-10 text-white font-semibold rounded-full mt-6 hover:bg-teal-800 active:bg-teal-950 shadow-lg">Hubungi
+          Saya</button>
+      </div>
+
+      <div class="w-full relative flex mt-24 sm:mt-44 md:mt-36 ">
+        <div class="bg-teal-400 w-2/3 h-2/3  top-0 rounded-full z-0 absolute right-1/2 translate-x-1/2 ">
+        </div>
+        <img src="asset/hero.png" alt="" class="pr-12 w-full lg:-translate-y-36 object-cover -translate-y-16 z-10 ">
+      </div>
+    </div>
+  </hero>
+
+  <about id="about">
+    <div class="container -translate-y-8 pt-20 mx-auto px-4 grid md:grid-cols-2 md:gap-x-8 lg:gap-x-16 ">
+      <div>
+        <h3 class="text-teal-500 font-semibold text-base lg:text-2xl">Tentang Saya</h3>
+        <h1 class="font-semibold text-2xl lg:text-3xl mt-2">Yuk, belajar web programming di WPU!</h1>
+        <p class="mt-4 text-justify text-gray-500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+          maxime cupiditate iusto quia similique enim aliquid inventore laudantium commodi, facere odit cum eligendi qui
+          minima porro nobis culpa .</p>
+      </div>
+
+      <div class="mt-8 ">
+        <h4 class="font-semibold text-xl lg:text-4xl mt-2 md:text-2xl">Mari Berteman</h4>
+        <p class="mt-4 text-justify text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatum,
+          commodi debitis. Nemo tempore illum quaerat earum molestias quis sapiente quae.</p>
+        <ul class="mt-4 flex w-64 sm:w-3/5 md:w-4/5 lg:w-4/6">
+          <li
+            class="p-1 mx-1 pl-0 sm:pl-0 sm:p-3 md:p-1 md:mx-1 md:pl-0 lg:mr-2 hover:scale-150 transition-all active:scale-100">
+            <a href="#"><img src="asset/discord.svg" alt="" class="object-cover"></a>
+          </li>
+          <li class="p-1 mx-1  sm:p-3 md:p-1 md:mx-1  lg:mr-2  hover:scale-150 transition-all active:scale-100"><a
+              href="#"><img src="asset/youtube.svg" alt="" class="object-cover"></a></li>
+          <li class="p-1 mx-1  sm:p-3 md:p-1 md:mx-1  lg:mr-2  hover:scale-150 transition-all active:scale-100"><a
+              href="#"><img src="asset/insta.svg" alt="" class="object-cover"></a></li>
+          <li class="p-1 mx-1  sm:p-3 md:p-1 md:mx-1  lg:mr-2  hover:scale-150 transition-all active:scale-100"><a
+              href="#"><img src="asset/linkedin.svg" alt="" class="object-cover"></a></li>
+          <li class="p-1 mx-1  sm:p-3 md:p-1 md:mx-1  lg:mr-2  hover:scale-150 transition-all active:scale-100"><a
+              href="#"><img src="asset/twitter.svg" alt="" class="object-cover"></a></li>
+          <li class="p-1 mx-1  sm:p-3 md:p-1 md:mx-1  lg:mr-2  hover:scale-150 transition-all active:scale-100"><a
+              href="#"><img src="asset/tiktok.svg" alt="" class="object-cover"></a></li>
+        </ul>
+      </div>
+
+      <div>
+
+      </div>
+
+    </div>
+  </about>
+
+  <portfolio id="portfolio">
+    <div class="bg-slate-100 mt-12 pt-12">
+      <div class=" container mx-auto pt-8 px-4 grid sm:grid-cols-2 sm:gap-x-8">
+
+        <div class="sm:col-span-2">
+          <h5 class="text-center text-lg sm:text-xl font-semibold text-teal-600">Portfolio</h5>
+          <h4 class="text-center text-2xl sm:text-3xl font-semibold mt-3">Project Terbaru</h4>
+          <p class="text-gray-500 mt-2 text-center ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo,
+            adipisci. ipsum dolor sit amet consectetur, adipisicing elit. A nemo tempore blanditiis vero harum
+            aspernatur!</p>
+        </div>
+
+        <div class="mt-12 overflow-hidden">
+          <img src="asset/projectsatu.png" alt=""
+            class="rounded-md mt-4 shadow-md hover:scale-110 transition-all duration-300 ">
+          <h4 class="text-lg font-semibold mt-4">Acen's Landing Page</h4>
+          <p class="text-justify text-gray-500 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et illo
+            atque fuga fugit labore adipisci id autem numquam eius mollitia!</p>
+        </div>
+
+        <div class="mt-12 overflow-hidden">
+          <img src="asset/projectdua.png" alt=""
+            class="rounded-md mt-4 shadow-md hover:scale-110 transition-all duration-300 ">
+          <h4 class="text-lg font-semibold mt-4">Project Services</h4>
+          <p class="text-justify text-gray-500 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et illo
+            atque fuga fugit labore adipisci id autem numquam eius mollitia!</p>
+        </div>
+
+        <div class="mt-12 overflow-hidden">
+          <img src="asset/projecttiga.png" alt=""
+            class="rounded-md mt-4 shadow-md hover:scale-110 transition-all duration-300 ">
+          <h4 class="text-lg font-semibold mt-4">Portfolio</h4>
+          <p class="text-justify text-gray-500 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et illo
+            atque fuga fugit labore adipisci id autem numquam eius mollitia!</p>
+        </div>
+
+        <div class="mt-12 overflow-hidden pb-12">
+          <img src="https://source.unsplash.com/1300x600?web" alt=""
+            class="rounded-md mt-4 shadow-md hover:scale-110 transition-all duration-300 ">
+          <h4 class="text-lg font-semibold mt-4">Acen's Landing Page</h4>
+          <p class="text-justify text-gray-500 mt-2">Lorem ipsum Lorem, ipsum. dolor sit amet consectetur, adipisicing
+            elit. Et illo atque fuga fugit labore adipisci id autem numquam eius mollitia!</p>
+        </div>
+
+      </div>
+    </div>
+  </portfolio>
+
+  <client id="clients">
+    <div class="bg-slate-800">
+      <div class="container mx-auto px-4">
+        <div>
+          <h3 class="text-teal-500 text-lg font-semibold text-center pt-20">Clients</h3>
+          <h1 class="text-2xl font-semibold text-white text-center">Yang Pernah Bekerjasama</h1>
+          <p class="mt-4 text-base text-gray-500 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Sit facere dicta praesentium consectetur dolor rerum? Consequuntur inventore quos unde corrupti!</p>
+        </div>
+        <div>
+          <ul class="grid grid-cols-2 gap-4 p-4 sm:grid-cols-4 sm:w-3/4 mx-auto sm:gap-8 lg:gap-x-12">
+            <li class="grayscale hover:grayscale-0 transition-all duration-300 hover:mix-blend-normal"><a href="#"><img
+                  src="asset/google.svg" alt=""></a></li>
+            <li
+              class="flex sm:pt-8 md:pt-10 lg:pt-14 pt-12 grayscale xl:pt-16 xl:mt-2 hover:grayscale-0 transition-all duration-300 hover:mix-blend-normal">
+              <a href="#"><img src="asset/gojek.svg" alt=""></a>
+            </li>
+            <li class="grayscale hover:grayscale-0 transition-all duration-300 hover:mix-blend-normal"><a href="#"><img
+                  src="asset/tokopedia.svg" alt=""></a></li>
+            <li
+              class="pt-8 grayscale hover:grayscale-0 xl:pt-12 transition-all duration-300 hover:mix-blend-normal lg:pt-12">
+              <a href="#"><img src="asset/traveloka.svg" alt=""></a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </client>
+
+  <blog id="blog">
+    <div class="bg-slate-100">
+      <div class="pt-20 container mx-auto px-4">
+        <h3 class="text-lg text-teal-500 font-semibold text-center sm:text-xl">Blog</h3>
+        <h1 class="text-2xl font-semibold text-black text-center mt-2 sm:text-3xl">Tulisan Terkini</h1>
+        <p class="text-base text-gray-500 text-center mt-4 sm:text-lg">Lorem ipsum dolor sit amet. ipsum dolorDolorum,
+          quibusdam itaque? Vero, debitis. Lorem, ipsum dolor.</p>
+      </div>
+
+      <div class="gap-8 grid sm:grid-cols-2 lg:grid-cols-3 mt-8 pb-8 px-4 justify-center">
+        <div class="max-w-lg  mx-auto bg-white rounded-lg shadow-lg overflow-hidden ">
+          <img src="asset/projectsatu.png" alt="">
+          <h3 class="px-4 mt-8 text-lg font-semibold">Tips Belajar programming</h3>
+          <p class="px-4 mt-2 text-gray-500 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates,
+            autem?</p>
+          <button class="ml-4 rounded-xl mt-4 hover:bg-teal-700 p-2 mb-4 bg-teal-500 font-semibold text-white">Baca
+            Selengkapnya</button>
+        </div>
+        <div class="max-w-lg  mx-auto bg-white rounded-lg shadow-lg overflow-hidden ">
+          <img src="asset/projectsatu.png" alt="">
+          <h3 class="px-4 mt-8 text-lg font-semibold">Tips Belajar programming</h3>
+          <p class="px-4 mt-2 text-gray-500 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates,
+            autem?</p>
+          <button class="ml-4 rounded-xl mt-4 hover:bg-teal-700 p-2 mb-4 bg-teal-500 font-semibold text-white">Baca
+            Selengkapnya</button>
+        </div>
+        <div class="max-w-lg self-center  mx-auto bg-white rounded-lg shadow-lg overflow-hidden ">
+          <img src="asset/projectsatu.png" alt="">
+          <h3 class="px-4 mt-8 text-lg font-semibold">Tips Belajar programming</h3>
+          <p class="px-4 mt-2 text-gray-500 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates,
+            autem?</p>
+          <button
+            class="ml-4 rounded-xl mt-4 hover:bg-teal-700 p-2 focus:bg-teal-950 mb-4 bg-teal-500 font-semibold text-white">Baca
+            Selengkapnya</button>
+        </div>
+      </div>
+    </div>
+  </blog>
+
+  <contact id="contact">
+    <div class="container mx-auto px-4 py-20">
+      <h3 class="text-center text-teal-500 text-lg font-semibold md:text-xl">Contact</h3>
+      <h1 class="text-center text-2xl font-semibold mt-2 md:text-3xl">Hubungi Kami</h1>
+      <p class="text-gray-500 text-center mt-4 md:text-lg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed
+        officiis architecto velit deserunt consequatur ducimus aperiam neque quas magni quaerat!</p>
+
+      <div class="my-8">
+        <h5 class="text-teal-500 font-semibold text-base ">Nama</h5>
+        <div class=" bg-slate-100 p-1 rounded-md shadow-md sm:h-12"><input type="name"
+            class="outline-teal-500 pl-1 bg-slate-100 text-black w-full h-full"></div>
+      </div>
+
+      <div class="my-8">
+        <h5 class="text-teal-500 font-semibold text-base">Email</h5>
+        <div class=" bg-slate-100 p-1 rounded-md shadow-md sm:h-12"><input type="email"
+            class="pl-1 bg-slate-100 text-black w-full outline-teal-500 h-full"></div>
+      </div>
+
+      <div class="my-8">
+        <h5 class="text-teal-500 font-semibold text-base">Pesan</h5>
+        <div class=" bg-slate-100 p-1 h-32 rounded-md shadow-md"><textarea type="text"
+            class=" p-1 bg-slate-100 text-black w-full h-full leading-none outline-teal-500"></textarea></div>
+      </div>
+
+      <button
+        class="rounded-full md:w-2/3 shadow-lg w-full block mt-4  hover:bg-teal-700 p-2 mx-auto  bg-teal-500 font-semibold text-white">Kirim</button>
+    </div>
+  </contact>
+
+  <footer id="footer">
+    <div class="bg-slate-800">
+      <div class=" py-20 container px-4 mx-auto flex flex-col  sm:grid sm:grid-cols-3 ">
+        <h1 class="text-white font-semibold text-xl col-span-3">WPU!</h1>
+
+        <ul class="mt-8">
+          <li class="text-lg text-white font-semibold ">Hubungi Kami</li>
+          <li class="text-gray-500 font-semibold mt-4">Sandhika@gmail.com</li>
+          <li class="text-gray-500 font-semibold">Jalan Trem No.96</li>
+          <li class="text-gray-500 font-semibold">Bangka Belitung</li>
+        </ul>
+        <ul class="mt-8">
+          <li class="text-lg text-white font-semibold">Kategori Tulisan</li>
+          <li class="text-gray-500 font-semibold mt-4">Programming</li>
+          <li class="text-gray-500 font-semibold">Teknologi</li>
+          <li class="text-gray-500 font-semibold">Gaya Hidup</li>
+        </ul>
+        <ul class="mt-8">
+          <li class="text-lg text-white font-semibold">Tautan</li>
+          <li class="text-gray-500 font-semibold mt-4">Beranda</li>
+          <li class="text-gray-500 font-semibold my-2">About</li>
+          <li class="text-gray-500 font-semibold my-2">Porfolio</li>
+          <li class="text-gray-500 font-semibold my-2">Clients</li>
+          <li class="text-gray-500 font-semibold my-2">Blog</li>
+          <li class="text-gray-500 font-semibold my-2">Contact</li>
+        </ul>
+
+        <div class="mt-8 border-t-2 border-gray-500 col-span-3 w-full">
+
+          <ul class="mt-4 flex w-64  mx-auto sm:w-2/5 md:w-2/5 lg:w-2/6 ">
+            <li
+              class="p-1 mx-1 pl-0 sm:pl-0 sm:p-3 md:p-1 md:mx-1 md:pl-0 lg:mr-2 hover:scale-150 transition-all active:scale-100">
+              <a href="#"><img src="asset/discord.svg" alt="" class="object-cover"></a>
+            </li>
+            <li class="p-1 mx-1  sm:p-3 md:p-1 md:mx-1  lg:mr-2  hover:scale-150 transition-all active:scale-100"><a
+                href="#"><img src="asset/youtube.svg" alt="" class="object-cover"></a></li>
+            <li class="p-1 mx-1  sm:p-3 md:p-1 md:mx-1  lg:mr-2  hover:scale-150 transition-all active:scale-100"><a
+                href="#"><img src="asset/insta.svg" alt="" class="object-cover"></a></li>
+            <li class="p-1 mx-1  sm:p-3 md:p-1 md:mx-1  lg:mr-2  hover:scale-150 transition-all active:scale-100"><a
+                href="#"><img src="asset/linkedin.svg" alt="" class="object-cover"></a></li>
+            <li class="p-1 mx-1  sm:p-3 md:p-1 md:mx-1  lg:mr-2  hover:scale-150 transition-all active:scale-100"><a
+                href="#"><img src="asset/twitter.svg" alt="" class="object-cover"></a></li>
+            <li class="p-1 mx-1  sm:p-3 md:p-1 md:mx-1  lg:mr-2  hover:scale-150 transition-all active:scale-100"><a
+                href="#"><img src="asset/tiktok.svg" alt="" class="object-cover"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector(".hamburger");
+    const link = document.querySelector(".urutan-link");
+    hamburger.onclick = () => {
+      hamburger.classList.toggle("is-active");
+      link.classList.toggle("invisible");
+    }
+    // const allPara = document.querySelectorAll(`p`);
+
+    // // allPara.style.color = `blue`;
+    // for (let para of allPara){
+    //   para.style.color = `blue`;
+    // }
+  </script>
+</body>
+
+</html>
